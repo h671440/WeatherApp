@@ -155,19 +155,17 @@ class WeatherApp(QWidget):
     def get_weather_emoji(weather_id):
         if 200 <= weather_id <=232:
             return "⛈️"
-        if 300 <= weather_id <=321:
+        elif 300 <= weather_id <=321:
             return "☁️"
-        if 500 <= weather_id <=531:
+        elif 500 <= weather_id <=531:
             return "🌧️"
-        if 600 <= weather_id <=622:
+        elif 600 <= weather_id <=622:
             return "❄️"
-        if 701 <= weather_id <=741:
-            return "🌪️"
-        if 701 <= weather_id <=232:
-            return "🌧️"
-        if weather_id ==762:
+        elif 701 <= weather_id <=741:
+            return "🌁"
+        elif weather_id ==762:
             return "🌋"
-        if weather_id ==771:
+        elif weather_id ==771:
             return "💨"
         elif weather_id ==781:
             return "🌪️"
@@ -176,7 +174,7 @@ class WeatherApp(QWidget):
         elif 801 <= weather_id <=804:
             return "☁️"
         else:
-            return ""
+            return " "
             
         
         
