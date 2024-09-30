@@ -7,9 +7,9 @@ from PyQt5.QtCore import Qt
 class WeatherApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.city_label = QLabel("Skriv inn navn på by: ", self)
+        self.city_label = QLabel("Enter city: ", self)
         self.city_input = QLineEdit(self)
-        self.get_weather_button = QPushButton("Få værmelding", self)
+        self.get_weather_button = QPushButton("Get weather", self)
         self.temperature_label = QLabel( self)
         self.emoji_label = QLabel(self)
         self.description_label = QLabel( self)
